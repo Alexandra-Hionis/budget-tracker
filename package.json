@@ -18,13 +18,10 @@
   },
   "homepage": "https://github.com/Alexandra-Hionis/budget-tracker#readme",
   "dependencies": {
-    // Node.js compression middleware
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    // Lightweight development node server for serving a web app, providing a fallback for browser history API, loading in the browser, and injecting scripts on the fly.
     "lite-server": "^2.6.1",
     "mongoose": "^5.11.11",
-    // HTTP request logger middleware for node.js
     "morgan": "^1.10.0"
   }
 }
