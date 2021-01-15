@@ -1,3 +1,4 @@
+
 let transactions = [];
 let myChart;
 
@@ -65,7 +66,7 @@ function populateChart() {
   let ctx = document.getElementById("myChart").getContext("2d");
 
   myChart = new Chart(ctx, {
-    type: "line",
+    type: 'line',
       data: {
         labels,
         datasets: [{
@@ -145,11 +146,9 @@ function sendTransaction(isAdding) {
 }
 
 document.querySelector("#add-btn").onclick = function() {
-  event.preventDefault();
   sendTransaction(true);
 };
 
 document.querySelector("#sub-btn").onclick = function() {
-  event.preventDefault();
   sendTransaction(false);
 };
