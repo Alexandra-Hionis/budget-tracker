@@ -1,4 +1,5 @@
 // db.js from week 17 act 26
+// we add this file so offline data syncs when we get back online
 let db;
 // create a new db request for a "budget" database.
 const request = indexedDB.open("budget", 1);
