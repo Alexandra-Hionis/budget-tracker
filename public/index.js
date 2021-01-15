@@ -65,7 +65,7 @@ function populateChart() {
   let ctx = document.getElementById("myChart").getContext("2d");
 
   myChart = new Chart(ctx, {
-    type: 'line',
+    type: "line",
       data: {
         labels,
         datasets: [{

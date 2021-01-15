@@ -97,6 +97,7 @@ const FILES_TO_CACHE = [
     self.clients.claim();
   });
   
+  // Your self.addEventListener("fetch" callback function needs to be converted to an async/await function rather than a promise
   // fetch
   self.addEventListener("fetch", function(evt) {
     // cache successful requests to the API
@@ -122,6 +123,10 @@ const FILES_TO_CACHE = [
   
       return;
     }
+
+
+
+
   
     // if the request is not for the API, serve static assets using "offline-first" approach.
     // see https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook#cache-falling-back-to-network
