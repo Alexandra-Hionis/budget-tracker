@@ -61,6 +61,7 @@ self.addEventListener("activate", function (evt) {
 //   );
 // }); 
 
+// https://stackoverflow.com/questions/57905153/serviceworkers-fetch-object-that-was-not-a-response-was-passed-to-respondwit
 evt.respondWith((async () => {
   const cachedResponse = await caches.match(event.request);
   if (cachedResponse) {
