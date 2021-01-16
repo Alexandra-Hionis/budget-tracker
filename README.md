@@ -14,10 +14,7 @@
 npm packages and dependencies including compression, express, lite-server, mongoose, and morgan
 ## Usage
 Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success. 
-<!-- ![image 1](assets/images/sample-1.png)
-![image 2](assets/images/sample-2.png)
-![video](https://media.giphy.com/media/eaqtFnAFebguCbpscK/giphy.gif) -->
- 
+![image 1](public/images/screenshot.png)
 ## License
 MIT
 ## Contributing
