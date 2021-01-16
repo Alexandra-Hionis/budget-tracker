@@ -41,19 +41,17 @@
     
     <canvas id="myChart"></canvas>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <!-- make sure to include db.js before index.js bc index.js has dependency on index.js line 136 -->
   <script src="/db.js"></script>
-  <script type="text/javascript">
-    (function () {
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("./service-worker.js", { scope: "/" })
-          .then(() => console.log("Service Worker registered successfully."))
-          .catch(error => console.log("Service Worker registration failed:", error));
-      }
-    })();
-  </script>
   <script src="index.js"></script>
+  <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then(reg => {
+            console.log("Service Worker file found!", reg);
+          });
+        });
+      }
+    </script>
 </body>
 </html>
